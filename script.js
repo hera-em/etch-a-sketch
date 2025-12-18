@@ -45,16 +45,13 @@ function makeGrid (gridSize) {
 button.addEventListener("click", () => {
     gridSize = 0;
     while (gridSize < 1 || gridSize > 100) {
-        gridSize = prompt("Size of grid's side (no more than 100)");
-        if (gridSize === "") {
-            break;
-        }
-        while (container.firstChild) {
-            container.removeChild(container.firstChild);
+        gridSize = Number(prompt("Size of grid's side (no more than 100)"));
+    }
+    while (container.firstChild) {
+        container.removeChild(container.firstChild);
         }
 
-        makeGrid (gridSize);
-    }
+    makeGrid (gridSize);
 
   
 });
