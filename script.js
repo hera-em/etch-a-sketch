@@ -27,9 +27,9 @@ function makeGrid (gridSize) {
         for (let j = 0; j < gridSize; j++) {
                 const div = document.createElement("div");
                 div.classList.add("element");
-                const elementSize = 960 / gridSize;
-                div.style.width = elementSize.toString() + "px";
-                div.style.height = elementSize.toString() + "px";
+                const elementSize = (1 / gridSize);
+                div.style.width = `${960 * elementSize}px`;
+                div.style.height = `${960 * elementSize}px`;
                 container.appendChild(div);
         }
     }   

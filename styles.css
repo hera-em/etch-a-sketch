@@ -1,5 +1,5 @@
 body {
-    display:flex;
+    display: flex;
     margin: 4px auto;
     justify-content: center;
     align-items: center;
@@ -17,6 +17,7 @@ button {
 
 #container {
     max-width: 960px;
+    max-height: 960px;
     display: flex;
     flex-wrap: wrap;
 }
