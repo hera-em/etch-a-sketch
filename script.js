@@ -49,13 +49,14 @@ button.addEventListener("click", () => {
         if (gridSize === "") {
             break;
         }
+        while (container.firstChild) {
+            container.removeChild(container.firstChild);
+        }
+
+        makeGrid (gridSize);
     }
 
-    while (container.firstChild) {
-        container.removeChild(container.firstChild);
-    }
-
-    makeGrid (gridSize);
+  
 });
 
 makeInitialGrid();
